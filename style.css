@@ -16,10 +16,9 @@ body {
 
 p {
 	color: rgb(0, 0, 0);
-	font-family: Geometria;
+	font-family: 'Geometria';
 	font-size: 16px;
 	font-weight: 400;
-	line-height: -1px;
 	letter-spacing: 0%;
 	text-align: left;
 }
@@ -31,6 +30,7 @@ p {
 .header {
 	background: url(/images/background-header.png);
 	padding-top: 30px;
+	height: 847px;
 }
 
 .header__nav {
@@ -86,7 +86,7 @@ span:last-child {
 
 .header__nav-phone-number {
 	color: rgb(0, 0, 0);
-	font-family: Geometria;
+	font-family: 'Geometria';
 	font-size: 30px;
 	font-weight: 400;
 	line-height: -1px;
@@ -106,6 +106,93 @@ span:last-child {
 	font-family: Geometria;
 	font-size: 16px;
 	font-weight: 600;
+	line-height: -1px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.header__items-title {
+	width: 586px;
+	color: rgb(0, 0, 0);
+	font-family: 'Geometria-Heavy';
+	font-size: 50px;
+	line-height: 70px;
+	letter-spacing: 0%;
+	text-align: left;
+	text-transform: uppercase;
+	text-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.header__items-title-description {
+	width: 540px;
+	color: rgb(0, 0, 0);
+	font-family: 'Geometria';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin-top: 0;
+}
+
+.header__items-achievements {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	margin-bottom: 40px;
+}
+
+.achievements {
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	gap: 20px;
+}
+
+.achievements h2 {
+	margin: 0;
+	height: 97px;
+	color: rgb(0, 0, 0);
+	font-family: 'Geometria-Light';
+	font-size: 80px;
+	font-weight: 300;
+	line-height: -1px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.achievements p {
+	margin: 0;
+	width: 129px;
+	height: 53px;
+}
+
+.header__items-draw {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.header__items-draw p {
+	width: 376px;
+	text-align: left;
+}
+
+.header__items-btn {
+	width: 360px;
+	height: 70px;
+	box-sizing: border-box;
+	border: 2px solid rgb(42, 148, 226);
+	border-radius: 5px;
+	background: rgb(42, 148, 226);
+	color: rgb(255, 255, 255);
+	font-family: Geometria;
+	font-size: 20px;
+	font-weight: 500;
 	line-height: -1px;
 	letter-spacing: 0%;
 	text-align: center;
