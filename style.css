@@ -23,6 +23,10 @@ p {
 	text-align: left;
 }
 
+.wrapper {
+	background: rgb(246, 246, 246);
+}
+
 .container {
 	margin: 0 390px;
 }
@@ -185,15 +189,556 @@ span:last-child {
 .header__items-btn {
 	width: 360px;
 	height: 70px;
-	box-sizing: border-box;
 	border: 2px solid rgb(42, 148, 226);
 	border-radius: 5px;
 	background: rgb(42, 148, 226);
 	color: rgb(255, 255, 255);
-	font-family: Geometria;
+	font-family: 'Geometria';
 	font-size: 20px;
 	font-weight: 500;
-	line-height: -1px;
 	letter-spacing: 0%;
 	text-align: center;
+}
+
+.questions {
+	display: flex;
+	flex-direction: column;
+	width: 1140px;
+	margin-top: 60px;
+}
+
+.questions__title {
+	margin: 0;
+	width: 1140px;
+	text-align: center;
+	font-family: 'Geometria-ExtraBold';
+	font-size: 35px;
+}
+
+.questions__description {
+	margin-top: 20px;
+	width: 1140px;
+	text-align: center;
+	margin-bottom: 49px;
+}
+
+.questions__items {
+	display: flex;
+	flex-direction: row;
+	outline: 3px solid rgb(246, 246, 246);
+}
+
+.questions__test {
+	display: flex;
+	flex-direction: column;
+	width: 1140px;
+	padding: 43px 42px 18px 36px;
+	margin: 0;
+	border-right: 2px solid rgb(241, 241, 241);
+}
+
+.questions__test-title {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 22px;
+	margin-top: 0;
+	margin-bottom: 34px;
+	height: 34px;
+}
+
+.questions__test-images {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	height: 264px;
+	padding-bottom: 25px;
+	border-bottom: 2px solid rgb(241, 241, 241);
+}
+
+.questions__test-images p {
+	font-family: 'Geometria-Bold';
+	font-size: 16px;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.questions__test-result {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: 'Geometria-Medium';
+	font-size: 16px;
+}
+
+.questions__test-result p:last-child {
+	color: rgb(42, 148, 226);
+}
+
+.questions__list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 40px 44px 31px 39px;
+}
+
+.questions__list-item {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	align-items: flex-start;
+	font-family: 'Geometria';
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	height: 105px;
+}
+
+.questions__list-item:last-child {
+	height: 131px;
+}
+
+.services {
+	margin-top: 60px;
+}
+
+.services__title {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 35px;
+	text-align: center;
+}
+
+.services__boxes {
+	display: grid;
+	grid-template-columns: 375px 374px 373px;
+	grid-template-areas:
+		'box1 box2 box3'
+		'box1 box4 box4'
+		'box5 box5 box6';
+	grid-gap: 10px;
+}
+
+.services__box1 {
+	background-image: url(/images/services1.png);
+	background-repeat: no-repeat;
+	grid-area: box1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 388px 20px 20px 20px;
+	font-family: 'Geometria-Bold';
+	font-size: 19px;
+	color: rgb(255, 255, 255);
+}
+
+.services__box1 h3 {
+	margin: 0;
+}
+
+.services__box1 p {
+	font-family: 'Geometria';
+	line-height: 26px;
+	margin: 0;
+	color: rgb(255, 255, 255);
+}
+
+.services__btn {
+	margin-top: 5px;
+	width: 333px;
+	height: 60px;
+	background: rgb(42, 148, 226);
+	border: none;
+	border-radius: 5px;
+	font-family: 'Geometria';
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+
+.services__box2 {
+	background-image: url(/images/services2.png);
+	background-repeat: no-repeat;
+	grid-area: box2;
+}
+
+.services__box2 h3 {
+	margin: 250px 20px 16px 20px;
+	float: left;
+	font-family: 'Geometria-Bold';
+	font-size: 19px;
+	color: rgb(255, 255, 255);
+}
+
+.services__box3 {
+	background-image: url(/images/services3.png);
+	background-repeat: no-repeat;
+	grid-area: box3;
+}
+
+.services__box3 h3 {
+	margin: 250px 20px 16px 20px;
+	float: left;
+	font-family: 'Geometria-Bold';
+	font-size: 19px;
+	color: rgb(255, 255, 255);
+}
+
+.services__box4 {
+	background-image: url(/images/services4.png);
+	background-repeat: no-repeat;
+	grid-area: box4;
+}
+
+.services__box4 h3 {
+	margin: 250px 20px 16px 20px;
+	float: left;
+	font-family: 'Geometria-Bold';
+	font-size: 19px;
+	color: rgb(255, 255, 255);
+}
+
+.services__box5 {
+	background-image: url(/images/services5.png);
+	background-repeat: no-repeat;
+	grid-area: box5;
+	height: 300px;
+}
+
+.services__box5 h3 {
+	margin: 250px 20px 16px 20px;
+	float: left;
+	font-family: 'Geometria-Bold';
+	font-size: 19px;
+	color: rgb(255, 255, 255);
+}
+
+.services__box6 {
+	background-image: url(/images/services6.png);
+	background-repeat: no-repeat;
+	grid-area: box6;
+	height: 300px;
+}
+
+.services__box6 h3 {
+	margin: 250px 20px 16px 20px;
+	float: left;
+	font-family: 'Geometria-Bold';
+	font-size: 19px;
+	color: rgb(255, 255, 255);
+}
+
+.apartments {
+	margin-top: 60px;
+}
+
+.apartments__title {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 35px;
+	text-align: center;
+}
+
+.apartments__description {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 49px;
+}
+
+.apartments__nav {
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+}
+
+.apartments__nav-btn {
+	font-family: 'Geometria';
+	font-size: 16px;
+	font-weight: 400;
+	width: 229px;
+	height: 60px;
+	background: rgba(0, 0, 0, 0);
+	border: 2px solid rgb(246, 246, 246);
+	border-left: none;
+}
+
+.apartments__nav-btn:nth-child(1) {
+	border-left: 2px solid rgb(246, 246, 246);
+}
+
+.apartments__nav-btn:focus {
+	background: rgb(42, 148, 226);
+	color: rgb(255, 255, 255);
+	border: none;
+}
+
+.apartments__nav-btn:hover {
+	background: rgb(246, 246, 246);
+	color: rgb(0, 0, 0);
+}
+
+.apartments__cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.apartments__cards-item {
+	outline: 1px solid rgb(246, 246, 246);
+}
+
+.apartments__cards-item h3 {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 22px;
+	margin: 0;
+	padding: 20px 30px 0 20px;
+}
+
+.apartments__cards-item p {
+	font-family: 'Geometria-Light';
+	font-size: 16px;
+	padding: 0 20px;
+}
+
+.numbers {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.item-price p {
+	margin: 0;
+}
+
+.item-price p:nth-child(1) {
+	font-size: 33px;
+	margin-bottom: 16px;
+}
+
+.item-size p {
+	font-family: 'Geometria-Medium';
+	margin: 0;
+}
+
+.item-size p:nth-child(1) {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.cards-btn {
+	background: rgb(246, 246, 246);
+	border: none;
+	font-family: 'Geometria-Medium';
+	font-size: 16px;
+	width: 100%;
+	height: 60px;
+	margin-top: 27px;
+}
+
+.cards-btn:focus {
+	background: rgb(42, 148, 226);
+	color: rgb(255, 255, 255);
+}
+
+.btn-show-more {
+	width: 100%;
+	height: 60px;
+	margin-top: 40px;
+	background: rgb(246, 246, 246);
+	border: none;
+	font-family: 'Geometria-Medium';
+	font-size: 16px;
+}
+
+.about__wrapper {
+	background: rgb(246, 246, 246);
+}
+
+.about {
+	display: flex;
+	flex-direction: row;
+	margin-top: 60px;
+	gap: 30px;
+	height: 695px;
+}
+
+.about__description {
+	width: 555px;
+	margin-top: 100px;
+}
+
+.about__description-title {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 35px;
+	line-height: 45px;
+	margin: 0;
+}
+
+.about__description p {
+	line-height: 24px;
+	margin: 0;
+}
+
+.about__btn {
+	background-color: rgb(42, 148, 226);
+	border: none;
+	border-radius: 5px;
+	font-family: 'Geometria';
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	width: 270px;
+	height: 60px;
+	margin-top: 26px;
+}
+
+.about__img {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 64px;
+}
+
+.about__img-other {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.directions {
+	margin-top: 60px;
+}
+
+.directions__title {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.directions__cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.directions__cards-item {
+	width: 455px;
+	height: 229px;
+	outline: 1px solid rgb(42, 148, 226);
+	border-radius: 10px;
+	padding: 35px 50px 15px 50px;
+}
+
+.directions__cards-item h3 {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 22px;
+	margin-top: 0;
+	margin-bottom: 64px;
+}
+
+.directions__cards-item-description {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 19px;
+}
+
+.directions__cards-item-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.directions__cards-item-text p:nth-child(1) {
+	font-size: 12px;
+	opacity: 0.5;
+	margin: 0;
+}
+
+.directions__cards-item-text p:nth-child(2) {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.directions__cards-item-text a {
+	text-decoration: none;
+	font-family: 'Geometria';
+	font-size: 25px;
+	color: rgb(0, 0, 0);
+	margin-bottom: 15px;
+}
+
+.directions__cards-item-text a:last-child {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.directions__cards-item-description img {
+	position: relative;
+	bottom: 20px;
+}
+
+.directions__links {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	margin-top: 60px;
+}
+
+.directions__links a {
+	font-family: 'Geometria';
+	font-size: 22px;
+	color: rgb(42, 148, 226);
+	line-height: 52px;
+	text-align: left;
+	width: 360px;
+	height: 148px;
+}
+
+.supervisor__wrapper {
+	background: rgb(238, 243, 250);
+}
+
+.supervisor {
+	display: flex;
+	flex-direction: row;
+	gap: 31px;
+	margin-top: 50px;
+	padding-top: 60px;
+}
+
+.supervisor__title {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 35px;
+	width: 485px;
+	height: 97px;
+	margin: 0;
+}
+
+.supervisor__text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.supervisor__text h3 {
+	font-family: 'Geometria-ExtraBold';
+	font-size: 22px;
+	margin: 0;
+}
+
+.supervisor__text p {
+	font-family: 'Geometria';
+	font-size: 16px;
+	line-height: 24px;
+	width: 664px;
+	height: 237px;
+	margin: 0;
+}
+
+.supervisor__btn {
+	background: rgb(42, 148, 226);
+	border: none;
+	border-radius: 5px;
+	font-family: 'Geometria';
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	width: 270px;
+	height: 60px;
 }

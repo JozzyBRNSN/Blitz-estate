@@ -65,42 +65,44 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="container">
+		<div class="container">
 			<section class="questions">
 				<h2 class="questions__title">Пройди тест из 5 вопросов</h2>
 				<p class="questions__description">
-					Пройдити тест из 5 вопросов Мы подберём 20 покупателей готовых
+					Мы подберём 20 покупателей готовых
 					купить вашу недвижимость в течение 24 часов
 				</p>
-				<div class="questions__test">
-					<h3 class="questions__test-title">Выберите местоположение объекта</h3>
-					<div class="questions__test-images">
-						<div class="questions__test-images-russia">
-							<img src="/images/Russia.png" alt="В России" />
-							<p class="questions__test-images-description">В России</p>
+				<div class="questions__items">
+					<div class="questions__test">
+						<h3 class="questions__test-title">Выберите местоположение объекта</h3>
+						<div class="questions__test-images">
+							<div class="questions__test-images-russia">
+								<img src="/images/Russia.png" alt="В России" />
+								<p>В России</p>
+							</div>
+							<div class="questions__test-images-russia">
+								<img src="/images/Anboard.png" alt="За границей" />
+								<p>За границей</p>
+							</div>
 						</div>
-						<div class="questions__test-images-russia">
-							<img src="/images/Anboard.png" alt="За границей" />
-							<p class="questions__test-images-description">За границей</p>
+						<div class="questions__test-result">
+							<p>Вы ответили на: 0/5 вопросов</p>
+							<p>Продолжить &#8594</p>
 						</div>
 					</div>
-					<div class="questions__test-result">
-						<p>Вы ответили на: 0/5 вопросов</p>
-						<p>Продолжить &#8594</p>
-					</div>
-				</div>
-				<div class="questions__list">
-					<div class="question__item">
-						<img src="/images/checkbox.svg" alt="checkbox">
-						<p>Поможем Вам приобрести, продать или арендовать необходимую недвижимость</p>
-					</div>
-					<div class="question__item">
-						<img src="/images/checkbox.svg" alt="checkbox">
-						<p>Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи в договоре</p>
-					</div>
-					<div class="question__item">
-						<img src="/images/checkbox.svg" alt="checkbox">
-						<p>Забронируем понравившуюся квартиру и зафиксируем стоимость для вас на момент бронирования</p>
+					<div class="questions__list">
+						<div class="questions__list-item">
+							<img src="/images/checkbox.svg" alt="checkbox">
+							Поможем Вам приобрести, продать или арендовать необходимую недвижимость
+						</div>
+						<div class="questions__list-item">
+							<img src="/images/checkbox.svg" alt="checkbox">
+							Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи в договоре
+						</div>
+						<div class="questions__list-item">
+							<img src="/images/checkbox.svg" alt="checkbox">
+							Забронируем понравившуюся квартиру и зафиксируем стоимость для вас на момент бронирования
+						</div>
 					</div>
 				</div>
 			</section>
@@ -109,41 +111,27 @@
 					Наши услуги на международном рынке
 				</h2>
 				<div class="services__boxes">
-					<div class="first__box">
-						<div class="first__box-first__item">
-							<img src="/images/services1.png" alt="Жилая недвижимость">
-							<h3>Жилая недвижимость</h3>
-							<p>
-								Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.
-							</p>
-							<button class="services__btn">Узнать больше</button>
-						</div>
-						<div>
-							<div>
-								<div class="first__box-second__item">
-									<img src="/images/services2.png" alt="Доходная недвижимость">
-									<h3>Доходная недвижимость</h3>
-								</div>
-								<div class="first__box-second__item">
-									<img src="/images/services3.png" alt="Инвестиционные операции">
-									<h3>Инвестиционные операции</h3>
-								</div>
-							</div>
-							<div class="first__box-third__item">
-								<img src="/images/services4.png" alt="Покупка яхт">
-								<h3>Покупка яхт</h3>
-							</div>
-						</div>
+					<div class="services__box1">
+						<h3>Жилая недвижимость</h3>
+						<p>
+							Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.
+						</p>
+						<button class="services__btn">Узнать больше</button>
 					</div>
-					<div class="second-box">
-						<div class="second__box-first__item">
-							<img src="/images/services5.png" alt="Доверительное управление">
-							<h3>Доверительное управление</h3>
-						</div>
-						<div class="second__box-second__item">
-							<img src="/images/services6.png" alt="Консьерж сервис">
-							<h3>Консьерж сервис</h3>
-						</div>
+					<div class="services__box2">
+						<h3>Доходная недвижимость</h3>
+					</div>
+					<div class="services__box3">
+						<h3>Инвестиционные операции</h3>
+					</div>
+					<div class="services__box4">
+						<h3>Покупка яхт</h3>
+					</div>
+					<div class="services__box5">
+						<h3>Доверительное управление</h3>
+					</div>
+					<div class="services__box6">
+						<h3>Консьерж сервис</h3>
 					</div>
 				</div>
 			</section>
@@ -151,7 +139,8 @@
 				<h2 class="apartments__title">
 					Выберите апартаменты в Москва-Сити
 				</h2>
-				<p>Мы включили в наш каталог все апартаменты доступные для покупки в Москва-Сити</p>
+				<p class="apartments__description">Мы включили в наш каталог все апартаменты доступные для покупки в Москва-Сити
+				</p>
 				<div class="apartments__nav">
 					<button class="apartments__nav-btn">Показать все</button>
 					<button class="apartments__nav-btn">От 20-30 млн</button>
@@ -164,13 +153,15 @@
 						<img src="/images/card1.png" alt="Апартаменты в «башне ОКО»">
 						<h3>Апартаменты в «башне ОКО»</h3>
 						<p>Лот № 4536</p>
-						<div class="item-count">
-							<p>25 600 000 ₽</p>
-							<p>365 714 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 70 м²</p>
-							<p>Этаж 52</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>25 600 000 ₽</p>
+								<p>365 714 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 70 м²</p>
+								<p>Этаж 52</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -180,13 +171,15 @@
 						<img src="/images/card2.png" alt="Апартаменты в «башне Империя»">
 						<h3>Апартаменты в «башне Империя»</h3>
 						<p>Лот № 4547</p>
-						<div class="item-count">
-							<p>27 900 000 ₽</p>
-							<p>420 000 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 62 м²</p>
-							<p>Этаж 35</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>27 900 000 ₽</p>
+								<p>420 000 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 62 м²</p>
+								<p>Этаж 35</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -196,13 +189,15 @@
 						<img src="/images/card3.png" alt="Апартаменты в «Neva Towers»">
 						<h3>Апартаменты в «Neva Towers»</h3>
 						<p>Лот № 4548</p>
-						<div class="item-count">
-							<p>19 000 000 ₽</p>
-							<p>475 000 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 40 м²</p>
-							<p>Этаж 16</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>19 000 000 ₽</p>
+								<p>475 000 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 40 м²</p>
+								<p>Этаж 16</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -212,13 +207,15 @@
 						<img src="/images/card4.png" alt="Апартаменты в комплексе «Федерация»">
 						<h3>Апартаменты в комплексе «Федерация»</h3>
 						<p>Лот № 4549</p>
-						<div class="item-count">
-							<p>59 500 000 ₽</p>
-							<p>540 909 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 110 м²</p>
-							<p>Этаж 84</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>59 500 000 ₽</p>
+								<p>540 909 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 110 м²</p>
+								<p>Этаж 84</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -228,13 +225,15 @@
 						<img src="/images/card5.png" alt="Апартаменты в «башне ОКО»">
 						<h3>Апартаменты в «башне ОКО»</h3>
 						<p>Лот № 4550</p>
-						<div class="item-count">
-							<p>34 900 000 ₽</p>
-							<p>396 590 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 88 м²</p>
-							<p>Этаж 29</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>34 900 000 ₽</p>
+								<p>396 590 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 88 м²</p>
+								<p>Этаж 29</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -244,13 +243,15 @@
 						<img src="/images/card6.png" alt="Апартаменты в «Город столиц»">
 						<h3>Апартаменты в «Город столиц»</h3>
 						<p>Лот № 4551</p>
-						<div class="item-count">
-							<p>28 400 000 ₽</p>
-							<p>498 245 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 57 м²</p>
-							<p>Этаж 48</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>28 400 000 ₽</p>
+								<p>498 245 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 57 м²</p>
+								<p>Этаж 48</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -260,13 +261,15 @@
 						<img src="/images/card7.png" alt="Апартаменты в «башне ОКО»">
 						<h3>Апартаменты в «башне ОКО»</h3>
 						<p>Лот № 4552</p>
-						<div class="item-count">
-							<p>38 200 000 ₽</p>
-							<p>553 623 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 69 м²</p>
-							<p>Этаж 58</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>38 200 000 ₽</p>
+								<p>553 623 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 69 м²</p>
+								<p>Этаж 58</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -276,13 +279,15 @@
 						<img src="/images/card8.png" alt="Апартаменты в «башне Империя»">
 						<h3>Апартаменты в «башне Империя»</h3>
 						<p>Лот № 4553</p>
-						<div class="item-count">
-							<p>41 000 000 ₽</p>
-							<p>554 054 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 74 м²</p>
-							<p>Этаж 41</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>41 000 000 ₽</p>
+								<p>554 054 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 74 м²</p>
+								<p>Этаж 41</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -292,13 +297,15 @@
 						<img src="/images/card9.png" alt="Апартаменты в «Город столиц»">
 						<h3>Апартаменты в «Город столиц»»</h3>
 						<p>Лот № 4554</p>
-						<div class="item-count">
-							<p>53 200 000 ₽</p>
-							<p>565 957 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 94 м²</p>
-							<p>Этаж 59</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>53 200 000 ₽</p>
+								<p>565 957 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 94 м²</p>
+								<p>Этаж 59</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -308,13 +315,15 @@
 						<img src="/images/card10.png" alt="Апартаменты в «Neva Towers»">
 						<h3>Апартаменты в «Neva Towers»»</h3>
 						<p>Лот № 4555</p>
-						<div class="item-count">
-							<p>89 900 000 ₽</p>
-							<p>642 142 ₽ за м²</p>
-						</div>
-						<div class="item-size">
-							<p>Площадь 140 м²</p>
-							<p>Этаж 61</p>
+						<div class="numbers">
+							<div class="item-price">
+								<p>89 900 000 ₽</p>
+								<p>642 142 ₽ за м²</p>
+							</div>
+							<div class="item-size">
+								<p>Площадь 140 м²</p>
+								<p>Этаж 61</p>
+							</div>
 						</div>
 						<button class="cards-btn">
 							Назначить просмотр
@@ -322,33 +331,41 @@
 					</div>
 				</div>
 				<button class="btn-show-more">
-					Показать ещё &#709;
+					Показать ещё &nbsp;&#709;
 				</button>
 			</section>
-			<section class="about">
-				<div class="about__description">
-					<h2 class="about__description-title">
-						Blitz Estate - на рынке недвижимости с 2008 года
-					</h2>
-					<p>Blitz Estate – международная компания по управлению недвижимостью и финансами. Основана в 2008 г. в
-						Австрии. На сегодня представлена в Англии, Испании, Латвии, ОАЭ, Австрии и России, кроме того имеет
-						партнерскую сеть более чем в десяти странах мира.
-						Мы предоставляем услуги полного цикла по приобретению и продаже недвижимости и управлению активами,
-						предоставляя клиентам неизменно высокое качество сервиса. Наш подход позволяет оптимизировать инвестиционный
-						портфель, диверсифицировать риски и обеспечить полную конфиденциальность сделки.</p>
-				</div>
-				<div class="about__img">
-					<div class="about__img-main">
-						<img src="/images/about1.png" alt="О нас">
+		</div>
+		<div class="about__wrapper">
+			<div class="container">
+				<section class="about">
+					<div class="about__description">
+						<h2 class="about__description-title">
+							Blitz Estate - на рынке недвижимости с 2008 года<br><br>
+						</h2>
+						<p>Blitz Estate – международная компания по управлению недвижимостью и финансами. Основана в 2008 г. в
+							Австрии. На сегодня представлена в Англии, Испании, Латвии, ОАЭ, Австрии и России, кроме того имеет
+							партнерскую сеть более чем в десяти странах мира. <br><br>
+							Мы предоставляем услуги полного цикла по приобретению и продаже недвижимости и управлению активами,
+							предоставляя клиентам неизменно высокое качество сервиса. Наш подход позволяет оптимизировать
+							инвестиционный
+							портфель, диверсифицировать риски и обеспечить полную конфиденциальность сделки.</p>
+						<button class="about__btn">Узнать больше</button>
 					</div>
-					<div class="about__img-other">
-						<img src="/images/about2.png" alt="О нас">
-						<img src="/images/about3.png" alt="О нас">
-						<img src="/images/about4.png" alt="О нас">
-						<img src="/images/about5.png" alt="О нас">
+					<div class="about__img">
+						<div class="about__img-main">
+							<img src="/images/about1.png" alt="О нас">
+						</div>
+						<div class="about__img-other">
+							<img src="/images/about2.png" alt="О нас">
+							<img src="/images/about3.png" alt="О нас">
+							<img src="/images/about4.png" alt="О нас">
+							<img src="/images/about5.png" alt="О нас">
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
+		</div>
+		<div class="container">
 			<section class="directions">
 				<h2 class="directions__title">
 					Направления нашего агентства
@@ -469,26 +486,31 @@
 					</a>
 				</div>
 			</section>
-			<section class="supervisor">
-				<div class="supervisor__text">
-					<h2 class="supervisor__title">Руководитель агентства Blitz Estate</h2>
-					<h3>Георгий Мебония</h3>
-					<p>
-						Вице-президент по проектам в ММДЦ «Москва-Сити», Генеральный директор компании Blitz Estate в России.
-						Имея европейский опыт работы и показывая верность своему делу являемся стратегическим партнером ММДЦ
-						«Москва-Сити с 2013 года на эксклюзивной реализации объектов приватных к продаже.
-						Благодаря кропотливому и теплому отношению нам удается быстро и эффективно оказывать нашим клиентам услуги
-						высочайшего уровня в сфере недвижимости.
-					</p>
-					<button class="supervisor__btn">
-						Задать вопрос
-					</button>
-				</div>
-				<div class="supervisor__img">
-					<img src="/images/supervisor.png" alt="Георгий Мебония">
-				</div>
-			</section>
+		</div>
+		<div class="supervisor__wrapper">
+			<div class="container">
+				<section class="supervisor">
+					<div class="supervisor__text">
+						<h2 class="supervisor__title">Руководитель агентства Blitz Estate</h2>
+						<h3>Георгий Мебония</h3>
+						<p>
+							Вице-президент по проектам в ММДЦ «Москва-Сити», Генеральный директор компании Blitz Estate в России. <br><br>
+							Имея европейский опыт работы и показывая верность своему делу являемся стратегическим партнером ММДЦ 
+							«Москва-Сити с 2013 года на эксклюзивной реализации объектов приватных к продаже. <br><br>
+							Благодаря кропотливому и теплому отношению нам удается быстро и эффективно оказывать нашим клиентам услуги
+							высочайшего уровня в сфере недвижимости.
+						</p>
+						<button class="supervisor__btn">
+							Задать вопрос
+						</button>
+					</div>
+					<div class="supervisor__img">
+						<img src="/images/supervisor.png" alt="Георгий Мебония">
+					</div>
+				</section>
 			</div>
+		</div>
+		>
 	</main>
 	<footer class="footer">
 		<div class="container">
