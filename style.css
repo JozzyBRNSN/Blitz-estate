@@ -9,6 +9,10 @@ html {
 	width: 0;
 }
 
+* {
+	margin: 0;
+}
+
 body {
 	max-width: 1920px;
 	box-sizing: border-box;
@@ -145,7 +149,7 @@ span:last-child {
 	display: flex;
 	flex-direction: row;
 	gap: 50px;
-	margin-bottom: 40px;
+	margin: 20px 0 40px;
 }
 
 .achievements {
@@ -156,7 +160,6 @@ span:last-child {
 }
 
 .achievements h2 {
-	margin: 0;
 	height: 97px;
 	color: rgb(0, 0, 0);
 	font-family: 'Geometria-Light';
@@ -168,7 +171,6 @@ span:last-child {
 }
 
 .achievements p {
-	margin: 0;
 	width: 129px;
 	height: 53px;
 }
@@ -208,7 +210,6 @@ span:last-child {
 }
 
 .questions__title {
-	margin: 0;
 	width: 1140px;
 	text-align: center;
 	font-family: 'Geometria-ExtraBold';
@@ -216,10 +217,9 @@ span:last-child {
 }
 
 .questions__description {
-	margin-top: 20px;
-	width: 1140px;
+	font-size: 22px;
 	text-align: center;
-	margin-bottom: 49px;
+	margin: 20px 0 49px;
 }
 
 .questions__items {
@@ -233,7 +233,6 @@ span:last-child {
 	flex-direction: column;
 	width: 1140px;
 	padding: 43px 42px 18px 36px;
-	margin: 0;
 	border-right: 2px solid rgb(241, 241, 241);
 }
 
@@ -259,6 +258,7 @@ span:last-child {
 	font-size: 16px;
 	text-align: center;
 	opacity: 0.5;
+	margin: 25px 0;
 }
 
 .questions__test-result {
@@ -267,6 +267,7 @@ span:last-child {
 	justify-content: space-between;
 	font-family: 'Geometria-Medium';
 	font-size: 16px;
+	margin-top: 31px;
 }
 
 .questions__test-result p:last-child {
@@ -288,7 +289,6 @@ span:last-child {
 	font-family: 'Geometria';
 	font-size: 16px;
 	line-height: 24px;
-	margin: 0;
 	height: 105px;
 }
 
@@ -304,6 +304,7 @@ span:last-child {
 	font-family: 'Geometria-ExtraBold';
 	font-size: 35px;
 	text-align: center;
+	margin-bottom: 32px;
 }
 
 .services__boxes {
@@ -329,14 +330,9 @@ span:last-child {
 	color: rgb(255, 255, 255);
 }
 
-.services__box1 h3 {
-	margin: 0;
-}
-
 .services__box1 p {
 	font-family: 'Geometria';
 	line-height: 26px;
-	margin: 0;
 	color: rgb(255, 255, 255);
 }
 
@@ -435,9 +431,9 @@ span:last-child {
 }
 
 .apartments__description {
-	margin-top: 20px;
+	font-size: 22px;
 	text-align: center;
-	margin-bottom: 49px;
+	margin: 20px 0 49px;
 }
 
 .apartments__nav {
@@ -486,7 +482,7 @@ span:last-child {
 .apartments__cards-item h3 {
 	font-family: 'Geometria-ExtraBold';
 	font-size: 22px;
-	margin: 0;
+	margin-bottom: 20px;
 	padding: 20px 30px 0 20px;
 }
 
@@ -494,16 +490,13 @@ span:last-child {
 	font-family: 'Geometria-Light';
 	font-size: 16px;
 	padding: 0 20px;
+	margin-bottom: 27px;
 }
 
 .numbers {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-
-.item-price p {
-	margin: 0;
 }
 
 .item-price p:nth-child(1) {
@@ -513,7 +506,6 @@ span:last-child {
 
 .item-size p {
 	font-family: 'Geometria-Medium';
-	margin: 0;
 }
 
 .item-size p:nth-child(1) {
@@ -528,7 +520,6 @@ span:last-child {
 	font-size: 16px;
 	width: 100%;
 	height: 60px;
-	margin-top: 27px;
 }
 
 .cards-btn:focus {
@@ -567,12 +558,10 @@ span:last-child {
 	font-family: 'Geometria-ExtraBold';
 	font-size: 35px;
 	line-height: 45px;
-	margin: 0;
 }
 
 .about__description p {
 	line-height: 24px;
-	margin: 0;
 }
 
 .about__btn {
@@ -648,7 +637,6 @@ span:last-child {
 .directions__cards-item-text p:nth-child(1) {
 	font-size: 12px;
 	opacity: 0.5;
-	margin: 0;
 }
 
 .directions__cards-item-text p:nth-child(2) {
@@ -708,7 +696,6 @@ span:last-child {
 	font-size: 35px;
 	width: 485px;
 	height: 97px;
-	margin: 0;
 }
 
 .supervisor__text {
@@ -720,7 +707,6 @@ span:last-child {
 .supervisor__text h3 {
 	font-family: 'Geometria-ExtraBold';
 	font-size: 22px;
-	margin: 0;
 }
 
 .supervisor__text p {
@@ -729,7 +715,6 @@ span:last-child {
 	line-height: 24px;
 	width: 664px;
 	height: 237px;
-	margin: 0;
 }
 
 .supervisor__btn {
@@ -742,3 +727,83 @@ span:last-child {
 	width: 270px;
 	height: 60px;
 }
+
+/* Footer */
+.footer {
+	background: rgb(83, 88, 96);
+	padding: 40px 0 40px;
+}
+
+.footer__container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.footer__info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 322px;
+	margin-right: 64px;
+}
+
+.footer__info p {
+	font-family: 'Geometria-Light';
+	color: rgb(255, 255, 255);
+	line-height: 28px;
+}
+
+.small {
+	font-size: 13px;
+}
+
+.big {
+	font-size: 16px;
+}
+
+.footer__logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	width: 369px;
+	height: 110px;
+	margin-right: 113px;
+}
+
+.footer__logo p {
+	font-family: 'Geometria-Light';
+	color: rgb(255, 255, 255);
+	line-height: 28px;
+	font-size: 16px;
+}
+
+.footer__connection {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	text-align: center;
+}
+.footer__connection a {
+	font-family: 'Geometria';
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+}
+
+.footer__connection a:nth-child(1) {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.footer__btn {
+	background: rgb(255, 255, 255);
+	border: none;
+	border-radius: 5px;
+	font-family: 'Geometria-Bold';
+	font-size: 16px;
+	width: 272px;
+	height: 55px;
+}
+
+
