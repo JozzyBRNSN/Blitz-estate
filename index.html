@@ -143,20 +143,20 @@
 				<p class="apartments__description">Мы включили в наш каталог все апартаменты доступные для покупки в Москва-Сити
 				</p>
 				<div class="apartments__nav">
-					<button class="apartments__nav-btn" id="apartments">Показать все</button>
-					<button class="apartments__nav-btn" id="firstFilter">От 20-30 млн</button>
-					<button class="apartments__nav-btn" id="secondFilter">От 30-50 млн</button>
-					<button class="apartments__nav-btn" id="thirdFilter">От 50-100 млн</button>
-					<button class="apartments__nav-btn" id="fourthFilter">Более 100 млн</button>
+					<button class="apartments__nav-btn" id="show-all">Показать все</button>
+					<button class="apartments__nav-btn" id="filter1">От 20-30 млн</button>
+					<button class="apartments__nav-btn" id="filter2">От 30-50 млн</button>
+					<button class="apartments__nav-btn" id="filter3">От 50-100 млн</button>
+					<button class="apartments__nav-btn" id="filter4">Более 100 млн</button>
 				</div>
-				<div class="apartments__cards">
-					<div class="apartments__cards-item">
+				<div class="apartments__cards" id="apartments__cards">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card1.png" alt="Апартаменты в «башне ОКО»">
 						<h3>Апартаменты в «башне ОКО»</h3>
 						<p>Лот № 4536</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>25 600 000 ₽</p>
+								<p id="price">25 600 000 ₽</p>
 								<p>365 714 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -168,13 +168,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card2.png" alt="Апартаменты в «башне Империя»">
 						<h3>Апартаменты в «башне Империя»</h3>
 						<p>Лот № 4547</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>27 900 000 ₽</p>
+								<p id="price">27 900 000 ₽</p>
 								<p>420 000 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -186,13 +186,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card3.png" alt="Апартаменты в «Neva Towers»">
 						<h3>Апартаменты в «Neva Towers»</h3>
 						<p>Лот № 4548</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>19 000 000 ₽</p>
+								<p id="price">19 000 000 ₽</p>
 								<p>475 000 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -204,13 +204,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card4.png" alt="Апартаменты в комплексе «Федерация»">
 						<h3>Апартаменты в комплексе «Федерация»</h3>
 						<p>Лот № 4549</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>59 500 000 ₽</p>
+								<p id="price">59 500 000 ₽</p>
 								<p>540 909 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -222,13 +222,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card5.png" alt="Апартаменты в «башне ОКО»">
 						<h3>Апартаменты в «башне ОКО»</h3>
 						<p>Лот № 4550</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>34 900 000 ₽</p>
+								<p id="price">34 900 000</p>
 								<p>396 590 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -240,13 +240,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card6.png" alt="Апартаменты в «Город столиц»">
 						<h3>Апартаменты в «Город столиц»</h3>
 						<p>Лот № 4551</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>28 400 000 ₽</p>
+								<p id="price">28 400 000 ₽</p>
 								<p>498 245 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -258,13 +258,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card7.png" alt="Апартаменты в «башне ОКО»">
 						<h3>Апартаменты в «башне ОКО»</h3>
 						<p>Лот № 4552</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>38 200 000 ₽</p>
+								<p id="price">38 200 000 ₽</p>
 								<p>553 623 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -276,13 +276,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card8.png" alt="Апартаменты в «башне Империя»">
 						<h3>Апартаменты в «башне Империя»</h3>
 						<p>Лот № 4553</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>41 000 000 ₽</p>
+								<p id="price">41 000 000 ₽</p>
 								<p>554 054 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -294,13 +294,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card9.png" alt="Апартаменты в «Город столиц»">
 						<h3>Апартаменты в «Город столиц»»</h3>
 						<p>Лот № 4554</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>53 200 000 ₽</p>
+								<p id="price">53 200 000 ₽</p>
 								<p>565 957 ₽ за м²</p>
 							</div>
 							<div class="item-size">
@@ -312,13 +312,13 @@
 							Назначить просмотр
 						</button>
 					</div>
-					<div class="apartments__cards-item">
+					<div class="apartments__cards-item" id="apartments__cards-item">
 						<img src="/images/card10.png" alt="Апартаменты в «Neva Towers»">
 						<h3>Апартаменты в «Neva Towers»»</h3>
 						<p>Лот № 4555</p>
 						<div class="numbers">
 							<div class="item-price">
-								<p>89 900 000 ₽</p>
+								<p id="price">89 900 000 ₽</p>
 								<p>642 142 ₽ за м²</p>
 							</div>
 							<div class="item-size">
