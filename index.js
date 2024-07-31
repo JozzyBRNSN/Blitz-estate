@@ -5,11 +5,21 @@ const filter3 = document.getElementById('filter3')
 const filter4 = document.getElementById('filter4')
 const price = document.querySelectorAll('#price')
 
-// Преобразование строки цены в число
 function transformInNumber(price) {
 	let str = price
 	let number = parseInt(str.replace(/\s+/g, '').replace('₽', ''))
 	return number
+}
+
+function filter(min, max) {
+	price.forEach(item => {
+		let number = transformInNumber(item.textContent)
+		if (number >= min && number <= max) {
+			item.closest('#apartments__cards-item').style.display = 'block'
+		} else {
+			item.closest('#apartments__cards-item').style.display = 'none'
+		}
+	})
 }
 
 allFilter.onclick = function () {
@@ -19,45 +29,17 @@ allFilter.onclick = function () {
 }
 
 filter1.onclick = function () {
-	price.forEach(item => {
-		let number = transformInNumber(item.textContent)
-		if (number <= 30000000 && number >= 20000000) {
-			item.closest('#apartments__cards-item').style.display = 'block'
-		} else {
-			item.closest('#apartments__cards-item').style.display = 'none'
-		}
-	})
+	filter(20000000, 30000000)
 }
 
 filter2.onclick = function () {
-	price.forEach(item => {
-		let number = transformInNumber(item.textContent)
-		if (number <= 50000000 && number >= 30000000) {
-			item.closest('#apartments__cards-item').style.display = 'block'
-		} else {
-			item.closest('#apartments__cards-item').style.display = 'none'
-		}
-	})
+	filter(30000000, 50000000)
 }
 
 filter3.onclick = function () {
-	price.forEach(item => {
-		let number = transformInNumber(item.textContent)
-		if (number <= 100000000 && number >= 50000000) {
-			item.closest('#apartments__cards-item').style.display = 'block'
-		} else {
-			item.closest('#apartments__cards-item').style.display = 'none'
-		}
-	})
+	filter(50000000, 100000000)
 }
 
 filter4.onclick = function () {
-	price.forEach(item => {
-		let number = transformInNumber(item.textContent)
-		if (number >= 100000000) {
-			item.closest('#apartments__cards-item').style.display = 'block'
-		} else {
-			item.closest('#apartments__cards-item').style.display = 'none'
-		}
-	})
+	filter(100000000, 200000000)
 }
