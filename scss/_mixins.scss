@@ -1,0 +1,32 @@
+@mixin text($_color, $_family, $_size) {
+	color: $_color;
+	font-family: $_family;
+	font-size: $_size;
+	text-align: left;
+}
+
+@mixin flex($_direction) {
+	display: flex;
+	flex-direction: $_direction;
+}
+
+@mixin button(
+	$_width,
+	$_height,
+	$_color,
+	$_bgColor,
+	$_border,
+	$_size,
+	$_weight
+) {
+	width: $_width;
+	height: $_height;
+	color: $_color;
+	background: $_bgColor;
+	border: $_border;
+	border-radius: 5px;
+	font-family: 'Geometria';
+	font-size: $_size;
+	font-weight: $_weight;
+	text-align: center;
+}

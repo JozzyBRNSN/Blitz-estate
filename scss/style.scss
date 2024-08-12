@@ -1,0 +1,36 @@
+@import './normalize';
+@import './vars';
+@import './mixins';
+@import './sections/header';
+@import url(/fonts/fonts.css);
+
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	max-width: 1920px;
+	box-sizing: border-box;
+}
+
+p {
+	@include text(rgb(0, 0, 0), 'Geometria', 16px);
+	font-weight: 400;
+}
+
+.wrapper {
+	background: $backgroundColor;
+}
+
+.container {
+	margin: 0 390px;
+}
+
