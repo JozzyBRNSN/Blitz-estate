@@ -2,6 +2,8 @@
 @import './vars';
 @import './mixins';
 @import './sections/header';
+@import './sections/main';
+@import './sections/footer';
 @import url(/fonts/fonts.css);
 
 html {
@@ -33,4 +35,5 @@ p {
 .container {
 	margin: 0 390px;
 }
+
 

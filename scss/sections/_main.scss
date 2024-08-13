@@ -1,0 +1,473 @@
+.main {
+	&__questions {
+		@include flex(column);
+		max-width: 1140px;
+		margin-top: 60px;
+
+		&-title {
+			@include font('Geometria-ExtraBold', 35px);
+			max-width: 1140px;
+			text-align: center;
+		}
+
+		&-description {
+			font-size: 22px;
+			text-align: center;
+			margin: 20px 0 49px;
+		}
+
+		&-content {
+			@include flex(row);
+			outline: 3px solid rgb(246, 246, 246);
+		}
+
+		&-test {
+			@include flex(column);
+			max-width: 1140px;
+			padding: 43px 42px 18px 36px;
+			border-right: 2px solid rgb(241, 241, 241);
+		}
+
+		&-subtitle {
+			@include font('Geometria-ExtraBold', 22px);
+			margin-top: 0;
+			margin-bottom: 34px;
+			height: 34px;
+		}
+
+		&-location {
+			@include flex(row);
+			gap: 30px;
+			height: 264px;
+			padding-bottom: 25px;
+			border-bottom: 2px solid rgb(241, 241, 241);
+
+			p {
+				@include font('Geometria-Bold', 16px);
+				text-align: center;
+				opacity: 0.5;
+				margin: 25px 0;
+			}
+		}
+
+		&-result {
+			@include flex(row);
+			@include font('Geometria-Medium', 16px);
+			justify-content: space-between;
+			margin-top: 31px;
+
+			p:last-child {
+				color: rgb(42, 148, 226);
+			}
+		}
+
+		&-list {
+			@include flex(column);
+			gap: 30px;
+			padding: 40px 44px 31px 39px;
+		}
+
+		&-item {
+			@include flex(row);
+			@include font('Geometria', 16px);
+			gap: 24px;
+			align-items: flex-start;
+			line-height: 24px;
+			height: 105px;
+
+			&:last-child {
+				height: 131px;
+			}
+		}
+	}
+
+	&__services {
+		margin-top: 60px;
+
+		&-title {
+			@include font('Geometria-ExtraBold', 35px);
+			text-align: center;
+			margin-bottom: 32px;
+		}
+
+		&-wrapper {
+			display: grid;
+			grid-template-columns: 375px 374px 373px;
+			grid-template-areas:
+				'box1 box2 box3'
+				'box1 box4 box4'
+				'box5 box5 box6';
+			grid-gap: 10px;
+		}
+
+		&-box1 {
+			@include flex(column);
+			@include font('Geometria-Bold', 19px);
+			background-image: url(/images/services1.png);
+			background-repeat: no-repeat;
+			grid-area: box1;
+			gap: 20px;
+			padding: 388px 20px 20px 20px;
+			color: rgb(255, 255, 255);
+
+			p {
+				font-family: 'Geometria';
+				line-height: 26px;
+				color: rgb(255, 255, 255);
+			}
+		}
+
+		&-box2 {
+			@include box(url(/images/services2.png), box2);
+
+			h3 {
+				@include boxContent;
+			}
+		}
+
+		&-box3 {
+			@include box(url(/images/services3.png), box3);
+
+			h3 {
+				@include boxContent;
+			}
+		}
+
+		&-box4 {
+			@include box(url(/images/services4.png), box4);
+
+			h3 {
+				@include boxContent;
+			}
+		}
+
+		&-box5 {
+			@include box(url(/images/services5.png), box5);
+
+			h3 {
+				@include boxContent;
+			}
+		}
+
+		&-box6 {
+			@include box(url(/images/services6.png), box6);
+
+			h3 {
+				@include boxContent;
+			}
+		}
+
+		&-btn {
+			@include button(
+				333px,
+				60px,
+				rgb(255, 255, 255),
+				rgb(42, 148, 226),
+				none,
+				16px,
+				500
+			);
+			margin-top: 5px;
+		}
+	}
+
+	&__apartments {
+		margin-top: 60px;
+
+		&-title {
+			@include font('Geometria-ExtraBold', 35px);
+			text-align: center;
+		}
+
+		&-description {
+			font-size: 22px;
+			text-align: center;
+			margin: 20px 0 49px;
+		}
+
+		&-control {
+			@include flex(row);
+			gap: 0;
+		}
+
+		&-btn {
+			@include btnApartments(
+				229px,
+				60px,
+				rgba(0, 0, 0, 0),
+				2px solid rgb(246, 246, 246),
+				'Geometria',
+				16px
+			);
+			border-radius: 0;
+			border-left: none;
+
+			&:nth-child(1) {
+				border-left: 2px solid rgb(246, 246, 246);
+			}
+
+			&:focus {
+				background: rgb(42, 148, 226);
+				color: rgb(255, 255, 255);
+				border: none;
+			}
+
+			&:hover {
+				background: rgb(246, 246, 246);
+				color: rgb(0, 0, 0);
+			}
+		}
+
+		&-list {
+			@include flex(row);
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+		&-item {
+			outline: 1px solid rgb(246, 246, 246);
+
+			h3 {
+				@include font('Geometria-ExtraBold', 22px);
+				margin-bottom: 20px;
+				padding: 20px 30px 0 20px;
+			}
+
+			p {
+				@include font('Geometria-Light', 16px);
+				padding: 0 20px;
+				margin-bottom: 27px;
+			}
+
+			&-numbers {
+				@include flex(row);
+				justify-content: space-between;
+			}
+
+			&-price {
+				p {
+					&:nth-child(1) {
+						font-size: 33px;
+						margin-bottom: 16px;
+					}
+				}
+			}
+
+			&-size {
+				p {
+					font-family: 'Geometria-Medium';
+
+					&:nth-child(1) {
+						margin-top: 10px;
+						margin-bottom: 25px;
+					}
+				}
+			}
+
+			&-btn {
+				@include btnApartments(
+					100%,
+					60px,
+					rgb(246, 246, 246),
+					none,
+					'Geometria-Medium',
+					16px
+				);
+
+				&:focus {
+					background: rgb(42, 148, 226);
+					color: rgb(255, 255, 255);
+				}
+			}
+		}
+		&-btn--show-more {
+			@include btnApartments(
+				100%,
+				60px,
+				rgb(246, 246, 246),
+				none,
+				'Geometria-Medium',
+				16px
+			);
+			margin-top: 40px;
+		}
+	}
+
+	&__about {
+		@include flex(row);
+		margin-top: 60px;
+		gap: 30px;
+		height: 695px;
+
+		&-wrapper {
+			background: rgb(246, 246, 246);
+		}
+
+		&-content {
+			width: 555px;
+			margin-top: 100px;
+
+			p {
+				line-height: 24px;
+			}
+		}
+
+		&-title {
+			@include font('Geometria-ExtraBold', 35px);
+			line-height: 45px;
+		}
+
+		&-btn {
+			@include button(
+				270px,
+				60px,
+				rgb(255, 255, 255),
+				rgb(42, 148, 226),
+				none,
+				20px,
+				500
+			);
+			margin-top: 26px;
+		}
+
+		&-image {
+			@include flex(column);
+			gap: 10px;
+			margin-top: 64px;
+
+			&--other {
+				@include flex(row);
+				gap: 10px;
+			}
+		}
+	}
+
+	&__directions {
+		margin-top: 60px;
+
+		&-title {
+			@include font('Geometria-ExtraBold', 35px);
+			text-align: center;
+			margin-bottom: 45px;
+		}
+
+		&-list {
+			@include flex(row);
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+		&-item {
+			width: 455px;
+			height: 229px;
+			outline: 1px solid rgb(42, 148, 226);
+			border-radius: 10px;
+			padding: 35px 50px 15px 50px;
+
+			h3 {
+				@include font('Geometria-ExtraBold', 22px);
+				margin-top: 0;
+				margin-bottom: 64px;
+			}
+
+			&-description {
+				@include flex(row);
+				justify-content: space-between;
+				margin-right: 19px;
+			}
+
+			&-text {
+				@include flex(column);
+
+				p {
+					&:nth-child(1) {
+						font-size: 12px;
+						opacity: 0.5;
+					}
+
+					&:nth-child(2) {
+						font-size: 16px;
+						margin-bottom: 20px;
+					}
+				}
+
+				a {
+					@include font('Geometria', 25px);
+					text-decoration: none;
+					color: rgb(0, 0, 0);
+					margin-bottom: 15px;
+
+					&:last-child {
+						font-size: 16px;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		&-icon {
+			position: relative;
+			bottom: 20px;
+		}
+
+		&-link {
+			@include flex(row);
+			gap: 30px;
+			margin-top: 60px;
+
+			a {
+				@include font('Geometria', 22px);
+				color: rgb(42, 148, 226);
+				line-height: 52px;
+				text-align: left;
+				width: 360px;
+				height: 148px;
+			}
+		}
+	}
+
+	&__supervisor {
+		@include flex(row);
+		gap: 31px;
+		margin-top: 50px;
+		padding-top: 60px;
+
+		&-wrapper {
+			background: rgb(238, 243, 250);
+		}
+
+		&-title {
+			@include font('Geometria-ExtraBold', 35px);
+			width: 485px;
+			height: 97px;
+		}
+
+		&-content {
+			@include flex(column);
+			gap: 20px;
+		}
+
+		&-subtitle {
+			@include font('Geometria-ExtraBold', 22px);
+		}
+
+		&-text {
+			@include font('Geometria', 16px);
+			line-height: 24px;
+			width: 664px;
+			height: 237px;
+		}
+
+		&-btn {
+			@include button(
+				270px,
+				60px,
+				rgb(255, 255, 255),
+				rgb(42, 148, 226),
+				none,
+				18px,
+				400
+			);
+		}
+	}
+}

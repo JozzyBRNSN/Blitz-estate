@@ -30,3 +30,31 @@
 	font-weight: $_weight;
 	text-align: center;
 }
+
+@mixin font($_family, $_size) {
+	font-family: $_family;
+	font-size: $_size;
+}
+
+@mixin box($_bgImage, $_gridArea) {
+	background-image: $_bgImage;
+	background-repeat: no-repeat;
+	grid-area: $_gridArea;
+}
+
+@mixin boxContent {
+	margin: 250px 20px 16px 20px;
+	float: left;
+	font-family: 'Geometria-Bold';
+	font-size: 19px;
+	color: rgb(255, 255, 255);
+}
+
+@mixin btnApartments($_width, $_height, $_bg, $_border, $_family, $_size) {
+	width: $_width;
+	height: $_height;
+	background: $_bg;
+	border: $_border;
+	font-family: $_family;
+	font-size: $_size;
+}
