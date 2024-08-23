@@ -66,6 +66,49 @@
 				16px,
 				600
 			);
+
+			&--active {
+				height: 100%;
+				opacity: 0.9;
+				position: fixed;
+				width: 100%;
+				z-index: 100;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	&__popup {
+		display: none;
+		top: 20%;
+		left: 20%;
+		width: 60%;
+		background: white;
+		position: fixed;
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			padding: 50px;
+			border: 1px solid rgb(42, 148, 226);
+
+			input {
+				height: 30px;
+				border: 2px solid rgb(42, 148, 226);
+				border-radius: 5px;
+				color: rgb(0, 0, 0);
+				padding: 10px;
+				font-family: 'Geometria-Light';
+				font-size: 16px;
+			}
+
+			button {
+				background: rgb(42, 148, 226);
+				border: none;
+				border-radius: 5px;
+				color: rgb(255, 255, 255);
+			}
 		}
 	}
 

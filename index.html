@@ -9,8 +9,16 @@
 	<script defer src="/index.js"></script>
 </head>
 
-<body>
+<body id="body">
 	<header class="header">
+		<div class="header__popup" id="header__popup">
+			<form action="">
+				<input type="text" placeholder="Имя:">
+				<input type="number" placeholder="Телефон:">
+				<input type="email" placeholder="E-mail:">
+				<button type="button" class="header__phone-btn" id="header__btn-popup">Оставить заявку</button>
+			</form>
+		</div>
 		<div class="container">
 			<div class="header__nav">
 				<nav class="header__nav-menu">
@@ -25,7 +33,7 @@
 				<p>Продажа недвижимости в Москва-сити</p>
 				<div class="header__phone">
 					<div class="header__phone-number">+7 (495) 199-19-99</div>
-					<button class="header__phone-btn">Заказать звонок</button>
+					<button class="header__phone-btn" id="header__phone-btn">Заказать звонок</button>
 				</div>
 			</div>
 			<div class="header__content">

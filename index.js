@@ -43,3 +43,16 @@ filter3.onclick = function () {
 filter4.onclick = function () {
 	filter(100000000, 200000000)
 }
+
+const hBtn = document.getElementById('header__phone-btn')
+const popup = document.getElementById('header__btn-popup')
+
+hBtn.onclick = function () {
+	document.getElementById('body').classList.add('header__phone-btn--active')
+	document.getElementById('header__popup').style.display = 'block'
+}
+
+popup.onclick = function () {
+	document.getElementById('body').classList.remove('header__phone-btn--active')
+	document.getElementById('header__popup').style.display = 'none'
+}

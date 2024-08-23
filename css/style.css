@@ -66,6 +66,45 @@
   font-weight: 600;
   text-align: center;
 }
+.header__phone-btn--active {
+  height: 100%;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.header__popup {
+  display: none;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  background: white;
+  position: fixed;
+}
+.header__popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  border: 1px solid rgb(42, 148, 226);
+}
+.header__popup form input {
+  height: 30px;
+  border: 2px solid rgb(42, 148, 226);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-family: "Geometria-Light";
+  font-size: 16px;
+}
+.header__popup form button {
+  background: rgb(42, 148, 226);
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
 .header__title {
   color: rgb(0, 0, 0);
   font-family: "Geometria-Heavy";
